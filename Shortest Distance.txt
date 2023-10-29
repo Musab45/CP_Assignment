@@ -1,0 +1,53 @@
+Input Reqirements:
+1. A list of different locations and the distance between 2 of each locations in the list.
+2. The starting location.
+3. The end location.
+
+Output Reqirements:
+1. The shortest path from the starting point to the ending point.
+2. Total distance of the shortest path.
+
+Algorithm:
+1. Firstly we have initialize the total visited locations to be included in the algorithm.
+2. Specify the distances from the first location to every other location that has been initialized. Repeat this until every possible distance has been specified, and create a list of this data.
+3.To start specifiy the starting point and the end point. To find the shortest distance between these two points a queue system will be used. In the queue the starting location will be first and the end location will be at the last.
+Firstly the distance of the starting location from all of it's neighbouring locations is determined. The neighbouring location with the shortest distance is added to the queue next to the starting loaction. Similarly the next nearest location to that neighbouring location is selected adding it to the queue making way until the end location is reached.
+
+Example:
+//Write as if it is written in VS using colors on text and black bg.
+	
+	Input:
+	Locations: A, B C, D, E
+	Distances:
+		A-B: 10
+		A-C: 20
+		B-C: 30
+		B-D: 40
+		C-D: 50
+		D-E: 60
+	
+	Start Location: A
+	End Location: E
+
+	Output:
+	Shortest Path: A-B-D-E
+	Total Distance: 110
+
+Explanation:
+The algorithm starts by firstly adding A to the start of the queue and E to the last. Now it checks which of the available location is the nearest to the location A. As the location B is at a shorter distance to A than location C, so it adds the location B to the queue next to location A. It repeats the process for the distances B-D and D-E and then stops as upon covering the distance D-E the end location has been reached.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

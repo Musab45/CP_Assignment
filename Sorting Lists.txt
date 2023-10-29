@@ -1,0 +1,6 @@
+Input Requirements:
+1. A list of random numbers.
+
+Output Requirements:
+1. A list that has the given numbers sorted in an ascending order.
+

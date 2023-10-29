@@ -1,0 +1,36 @@
+Required Data:
+A dictionary that contains names and quantity of items stored.
+
+Function to Perform:
+Add and removing items from the inventory, updating the quantity of existing items, and 
+generating reports of the items and their quantities.
+
+Algorithm:
+Adding an Item:
+1. Check the dictionary if the item exists in the inventory.
+2. If the item already exists in the inventory then update it's quantity.
+3. If the item does not exist in the inventory then add it to the dictionary along with it's quantity.
+Removing an Item:
+1. Check the dictionary if the item exists in the inventory.
+2. If the item does not exist then stop.
+3. If the item already exists then remove / short list it from the dictionary.
+Updating the quantity of the item:
+1. Check if the item exists.
+2. If it does not exist add it to the dictionary along with it's quantity.
+3. If the item exists then update it's quantity.
+Generating a Report:
+1. Go through the inventory's dictionary and print out the names of items along with their quantites.
+
+Example:
+Adding 10 Oranges to the inventory.
+
+Dictionary:
+Apple = 10
+Banana = 12
+Orange = 4
+
+Enter function to perform: Add
+Enter name of item to add: Orange
+Enter quantity to add: 10
+
+"Quantity of oranges was updated. Now you have 14 oranges."
