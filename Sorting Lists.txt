@@ -4,3 +4,22 @@ Input Requirements:
 Output Requirements:
 1. A list that has the given numbers sorted in an ascending order.
 
+Algorithm:
+1. This algorithm works using the merge sort method. It starts working once the user has entered a list of random numbers.
+2. After the algorithm has the set of random numbers it divides the list of random numbers in 2 halves.
+3. Once the list has been split into 2 halves it arranges the elements in 2 halves by comparing every element recursively and adding the numbers to a new list in an ascending order.
+4. After there is no number left in the older lists and once the new list of ascendically sorted numbers has been finalized the algorithm presents the new list to the user as output.
+
+Example:
+Input:[5,3,2,1,4]
+Output:[1,2,3,4,5]
+
+Explanation:
+1. The list is divided into 2 halves [5,3] and [2,1,4].
+2. Each element of every list that has been split up is compared to create a new list until the originally given has no numbers left.
+3. Merging the two sorted halves of the list:
+	i. Comparing the first elements of the two halves that are "5" and "2".
+	ii. Adding the  smaller element "2" to the new list.
+	iii. Removing the element that was added to the new list from the older list.
+	iv. Repeating this process until both halves of the original list are empty.
+4. Final result is printed as [1,2,3,4,5].
