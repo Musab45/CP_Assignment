@@ -14,7 +14,6 @@ Algorithm:
 Firstly the distance of the starting location from all of it's neighbouring locations is determined. The neighbouring location with the shortest distance is added to the queue next to the starting loaction. Similarly the next nearest location to that neighbouring location is selected adding it to the queue making way until the end location is reached.
 
 Example:
-//Write as if it is written in VS using colors on text and black bg.
 	
 	Input:
 	Locations: A, B C, D, E
